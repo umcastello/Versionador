@@ -62,3 +62,51 @@ foreach my $file (@files) {
 }
 
 print "Versioning complete to ${major}.${minor}\n";
+
+# =========================================================================
+# POD Documentation
+# =========================================================================
+
+=encoding utf8
+
+=head1 NAME
+
+versionador.pl - Sistema minimalista de controle de versão em Perl.
+
+=encoding utf8
+
+=head1 SYNOPSIS
+
+B<versionador.pl>
+
+=head1 DESCRIPTION
+
+Este projeto tem por objetivo criar um sistema minimalista de controle de versão, semelhante ao Subversion (SVN), utilizando o poder do Perl.
+
+A principal funcionalidade é gerenciar e rastrear mudanças em arquivos críticos.
+
+=head1 USO
+
+Para utilizar o versionador:
+
+=over 4
+
+=item 1. Edite o arquivo C<versionador.pl> e inclua os arquivos que serão versionados com o caminho relativo.
+
+=item 2. Execute: B<./versionador.pl> sempre antes e depois de qualquer modificação importante em seu código.
+
+=back
+
+=head1 INSTALAÇÃO
+
+Copie o binário (versionador.pl) para um diretório em um sistema Linux que tenha o interpretador Perl instalado.
+
+=head1 AUTHOR
+
+Ulisses Manzo Castello (umcastello@gmail.com)
+
+=head1 SEE ALSO
+
+L<svn>, L<git>
+
+=cut
